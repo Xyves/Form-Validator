@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Hi there</legend>
+            <label for="email">Email</label> 
+            <span>*required</span>
+            <input type="email" placeholder="email" id="email">
+        <label for="country">Country</label>
+        <select name="country" id="countries">
+            <option value="Poland">Poland</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Magadaskar">Magadaskar</option>
+            <option value="Haiti">Haiti</option>
+        </select>
+        <label for="zip-code">Kod Pocztowy</label>
+        <input name ="zip-code"type="text"pattern="^\d{2}-\d{3}$"placeholder="postal" id="zipcode">
+        <label for="password" minlength="6" maxlength="15">Password</label>
+        <input type="password" name="password"  id="password" required>
+        <label for="password-comfirm">Confirm password</label>
+        <input type="password" name="password-comfirm"  id="password-comfirm" required>
+        <button id="button" type="submit">X</button>
+    </fieldset>
+    </form>
+    <script src="script.js"defer></script>
+</body>
+</html>
